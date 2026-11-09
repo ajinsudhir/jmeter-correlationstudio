@@ -1,0 +1,26 @@
+[
+    {
+        "id": "jmeter-correlationstudio",
+        "name": "Correlation Studio for JMeter",
+        "description": "Automates the full release-to-release lifecycle of a JMeter script. Auto-Correlator: detects session tokens, CSRF values, and hidden fields by analyzing a HAR/JTL recording, suggests Regular Expression Extractors, and lets you review and apply them (with a built-in regex tester, NeoLoad-style). Saves correlation rules as reusable templates, organized by project, so the next release's script gets the same correlations applied automatically. Record Scenario: records browser scenarios via Playwright \u2014 either a fully scripted, repeatable .js file or a live, click-through interactive session \u2014 with named Transaction Controller grouping, text/response-code assertions, and one-time browser rendering-timing and per-request network-timing baselines (DNS/connect/SSL/TTFB/download). Generates a fresh .jmx directly from a HAR recording. Compare Scripts/Recordings: diffs two .jmx/.har/.jtl files \u2014 added/removed/changed requests, parameter and body field changes, and Transaction Controller differences \u2014 as a color-coded, IDE-style diff, so you can see exactly what the application changed between releases before re-correlating anything. Capture Render Timing Under Load: starts your test plan's own load test, then runs one real browser through your scenario while that load is active, to see what the UI experiences under realistic concurrent load.",
+        "screenshotUrl": "https://github.com/ajinsudhir/jmeter-correlationstudio/raw/main/docs/screenshot.png",
+        "helpUrl": "https://github.com/ajinsudhir/jmeter-correlationstudio",
+        "vendor": "Ajin Sudhir",
+        "markerClass": "io.correlationstudio.jmeter.CorrelatorMenuCreator",
+        "componentClasses": [
+            "io.correlationstudio.jmeter.CorrelatorMenuCreator",
+            "io.correlationstudio.jmeter.CorrelatorDialog",
+            "io.correlationstudio.jmeter.PlaywrightRecorderDialog",
+            "io.correlationstudio.jmeter.InteractiveRecorderDialog",
+            "io.correlationstudio.jmeter.CompareDialog",
+            "io.correlationstudio.jmeter.LoadTestRenderCaptureDialog"
+        ],
+        "canUninstall": true,
+        "versions": {
+            "1.0.0": {
+                "changes": "Initial public release.",
+                "downloadUrl": "https://github.com/ajinsudhir/jmeter-correlationstudio/releases/download/v1.0.0/jmeter-correlationstudio.jar"
+            }
+        }
+    }
+]
