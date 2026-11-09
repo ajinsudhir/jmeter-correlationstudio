@@ -1,0 +1,7 @@
+pattern,sampler_name
+/api/login,Login_POST
+/api/search\?,Search_Query
+/api/cart/add,Cart_AddItem
+/api/checkout/submit,Checkout_Submit
+/api/checkout/confirm,Checkout_Confirm
+"/api/items/\d{2,4}$",Item_Fetch
